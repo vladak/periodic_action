@@ -2,6 +2,9 @@ name: Build
 
 on:
   push:
+    paths-ignore:
+    - README.md
+    - '**/*.md'
   pull_request:
   schedule:
   - cron: "*/10 0 * * *"
